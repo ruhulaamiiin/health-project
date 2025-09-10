@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('slug')->unique();
             $table->integer('ordering')->default(10000);
             $table->boolean('is_visible')->default(false);
-            $table->foreignId('parent_id')->nullable()->constrained('categories')->nullOnDelete();
             $table->softDeletes();
             $table->timestamps();
         });

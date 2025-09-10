@@ -1,6 +1,6 @@
 <div id="categoryModal" data-target="#categoryModal" data-backdrop="false"
     class="modal-body fixed inset-0 z-50 justify-center items-center backdrop-blur-sm transition-opacity duration-300 opacity-0 hidden">
-    <div class="modal-content bg-background rounded shadow-md w-full max-w-md p-4 border transition-all duration-150">
+    <div class="modal-content bg-white rounded shadow-md w-full max-w-md p-4 border border-gray-200 transition-all duration-150">
         <div class="flex justify-between items-center mb-4">
             <h3 class="text-md font-semibold modal-title"></h3>
             <button class="close-modal text-muted-foreground hover:text-foreground" data-target="#categoryModal">
@@ -21,8 +21,8 @@
                         <span class="error-text error-name text-[12px] text-red-500"></span>
                 </div>
                 <div class="mb-4">
-                    <label for="slug" class="block text-sm font-medium mb-1">Slug (optional)</label>
-                    <input type="text" id="slug" name="slug"
+                    <label for="slug" class="block text-sm font-medium mb-1">Slug (Auto generated)</label>
+                    <input type="text" id="slug" name="slug" disabled placeholder="auto-generated"
                         class="w-full px-3 py-2 rounded-md border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent" />
                 <span class="error-text error-slug text-[12px] text-red-500"></span>
                     </div>
@@ -45,11 +45,11 @@
                 </div>
                 <div class="mt-4 flex justify-end space-x-3">
                     <button type="button" data-target="#categoryModal"
-                        class="close-modal px-3 py-1 cursor-pointer rounded-md border border-input bg-background text-foreground hover:bg-accent transition-colors">
+                        class="close-modal px-3 py-1 cursor-pointer rounded-md hover:bg-accent transition-colors">
                         Cancel
                     </button>
                     <button type="submit"
-                        class="btn-title px-3 py-1 cursor-pointer rounded-md text-sm font-medium transition-colors gap-2 bg-foreground text-background hover:bg-foreground/80">
+                        class="btn-title px-3 py-1 cursor-pointer rounded-md text-sm font-medium transition-colors gap-2 bg-blue-800 text-background hover:bg-foreground/80">
 
                     </button>
                 </div>

@@ -7,8 +7,6 @@
                 <th scope="col" class="px-6 py-3">Slug</th>
                 <th scope="col" class="px-6 py-3 text-center">Ordering</th>
                 <th scope="col" class="px-6 py-3 text-center">Visible</th>
-                <th scope="col" class="px-6 py-3">Parent</th>
-                <th scope="col" class="px-6 py-3 text-center">Created At</th>
                 <th scope="col" class="px-6 py-3 text-center">Actions</th>
             </tr>
         </thead>
@@ -29,10 +27,6 @@
                                 ✕ Hidden
                             </span>
                         @endif
-                    </td>
-                    <td class="px-6 py-4">{{ $category->parent?->name ?? '—' }}</td>
-                    <td class="px-6 py-4 text-center text-gray-500">
-                        {{ $category->created_at->format('d M, Y') }}
                     </td>
                     <td class="px-6 py-4 text-center">
                         <div class="flex justify-center gap-2">
